@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shapes of UBC</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/css/bootstrap-select.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.3/js/bootstrap-select.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="custom.css" rel="stylesheet">
+
+    <script src="game1.js"></script>
+
+</head>
+
+<style>
+    .center {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .glyphicon {
+        top: 5px;
+    }
+
+
+</style>
+
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./index.html">Shapes of U</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="center" id="game1">
+        <p class="lead" style="margin-bottom: 5px">60 s: Pick the Building!</p><br>
+        <span style="font-size: 10pt">
+            <span class="label label-success">Tips:-</span> If more than one shown, guess the one in yellow! <br>Take the extra as hints :)</span>
+        <div style='padding-top: 10px' id="picture-div">
+
+        </div>
+        <div class="form-group" style="padding-top: 20px; white-space:nowrap">
+            <select class="selectpicker" title="Click to type" data-live-search="true" data-dropup-auto="true" data-window-padding="[350, 0, 0, 0]" data-width="175px">
+                <option>Allard Hall</option>
+                <option>Abdul Ladha</option>
+                <option>Audain Art Center (AAC)</option>
+                <option>Biological Sciences</option>
+                <option>Brock Hall Annex</option>
+                <option>Buchanan</option>
+                <option>Chan Center</option>
+                <option>Chemistry</option>
+                <option>Earth Sciences Building (ESB)</option>
+                <option>Forest Sciences Center (FSC)</option>
+                <option>Geography</option>
+                <option>Hebb</option>
+                <option>Hennings</option>
+                <option>Henry Angus</option>
+                <option>Hugh Dempster Pavilion (DMP)</option>
+                <option>Institute for Computing (ICCS)</option>
+                <option>Irving K. Barber Learning Center</option>
+                <option>Walter C. Koerner Library</option>
+                <option>Leonard S. Klick (LSK)</option>
+                <option>Life Sciences Center (LSC)</option>
+                <option>MacMillan (MCML)</option>
+                <option>Mathematics</option>
+                <option>Math Annex (MATX)</option>
+                <option>Museum of Anthropology (MOA)</option>
+                <option>Neville Scarfe (SCRF)</option>
+                <option>Nitobe Garden</option>
+                <option>Wesbrook</option>
+                <option>West Mall Swing Space (SWNG)</option>
+                <option>University Hill Secondary (UHIL)</option>
+            </select>
+            <span style="font-size:30px; top: 10px; color:yellow" class="glyphicon glyphicon-ok"></span>
+            <span style="font-size:30px; top: 10px" class="glyphicon glyphicon-remove"></span>
+            <input type='submit' id='submit1' value='submit' class='btn btn-default btn-lg' onclick='submit1()'/>
+
+        </div>
+
+    </div>
+
+</div><!-- /.container -->
+
+
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">Site dedicated to shapes of UBC</p>
+    </div>
+</footer>
+
+</body>
+</html>
